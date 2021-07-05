@@ -1,4 +1,6 @@
 import CharacterCard from './CharacterCard';
+import React from 'react';
+import './App.css';
 function App() {
  return (
  <div>
@@ -7,3 +9,4 @@ function App() {
  </div>
  );
 }
+export default App
