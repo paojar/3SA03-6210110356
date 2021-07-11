@@ -38,13 +38,20 @@ export default function WordCard(props){
                 console.log('attempt: ',state.attempt)   
                 
 
-                const result = []
+                const result = [];
+                
                 for (let i=0; i<state.attempt; i++){
                     
                     result.push(state.word[i])
-                    
+    
                 }
+                
+                for(let i=state.attempt; i<state.word.length;i++){
+                    result.push('_')
+                }
+                
                 console.log('hint is ',result)
+                
                 
                     
              }
