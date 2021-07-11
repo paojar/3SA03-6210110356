@@ -29,7 +29,7 @@ export default function WordCard(props){
              if(guess == state.word){
                 console.log('yeah!')
                 setState({...state, completed: true})
-             }else if(state.attempt ==  state.word.length){
+             }else if(state.attempt ==  state.word.length-1){
                 console.log('you lose!')
                 console.log('correct word is ',state.word)
              }else{
