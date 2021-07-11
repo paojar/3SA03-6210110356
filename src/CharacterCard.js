@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 export default function CharacterCard(props) {
    
     const [active, setActive] = useState(false);
@@ -8,6 +8,7 @@ export default function CharacterCard(props) {
             props.activationHandler(props.value)
         }
     }
+
     
     const className = `card ${active ? 'activeCard' : ''}`
     return (
